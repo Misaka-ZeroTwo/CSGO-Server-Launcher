@@ -29,143 +29,208 @@ namespace CSGO_Server_Launcher
         /// </summary>
         private void InitializeComponent()
         {
-            this.Collections = new System.Windows.Forms.ComboBox();
-            this.Start = new System.Windows.Forms.Button();
-            this.Tickrate = new System.Windows.Forms.ComboBox();
-            this.Gamemode = new System.Windows.Forms.ComboBox();
-            this.ConfigStatus = new System.Windows.Forms.Label();
-            this.Status = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.AddToFavorite = new System.Windows.Forms.Button();
+            this.CollectionsComboBox = new System.Windows.Forms.ComboBox();
+            this.StartButton = new System.Windows.Forms.Button();
+            this.TickrateComboBox = new System.Windows.Forms.ComboBox();
+            this.GamemodeComboBox = new System.Windows.Forms.ComboBox();
+            this.CollectionLinkLabel = new System.Windows.Forms.Label();
+            this.DefaultMapLabel = new System.Windows.Forms.Label();
+            this.CollectionLinkTextbox = new System.Windows.Forms.TextBox();
+            this.DefaultMapTextbox = new System.Windows.Forms.TextBox();
+            this.AddToFavoriteButton = new System.Windows.Forms.Button();
+            this.TickrateLabel = new System.Windows.Forms.Label();
+            this.GamemodeLabel = new System.Windows.Forms.Label();
+            this.CollectionsLabel = new System.Windows.Forms.Label();
+            this.PortComboBox = new System.Windows.Forms.ComboBox();
+            this.PortLabel = new System.Windows.Forms.Label();
+            this.CollectionNameTextBox = new System.Windows.Forms.TextBox();
+            this.CollectionName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Collections
+            // CollectionsComboBox
             // 
-            this.Collections.Font = new System.Drawing.Font("宋体", 14F);
-            this.Collections.FormattingEnabled = true;
-            this.Collections.IntegralHeight = false;
-            this.Collections.Location = new System.Drawing.Point(431, 339);
-            this.Collections.Name = "Collections";
-            this.Collections.Size = new System.Drawing.Size(130, 27);
-            this.Collections.TabIndex = 0;
-            this.Collections.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.CollectionsComboBox.DropDownHeight = 200;
+            this.CollectionsComboBox.Font = new System.Drawing.Font("宋体", 14F);
+            this.CollectionsComboBox.FormattingEnabled = true;
+            this.CollectionsComboBox.IntegralHeight = false;
+            this.CollectionsComboBox.Location = new System.Drawing.Point(385, 177);
+            this.CollectionsComboBox.Name = "CollectionsComboBox";
+            this.CollectionsComboBox.Size = new System.Drawing.Size(198, 27);
+            this.CollectionsComboBox.TabIndex = 0;
+            this.CollectionsComboBox.Text = "沙2";
+            this.CollectionsComboBox.Click += new System.EventHandler(this.CollectionsComboBox_Click);
             // 
-            // Start
+            // StartButton
             // 
-            this.Start.Font = new System.Drawing.Font("宋体", 15F);
-            this.Start.Location = new System.Drawing.Point(612, 374);
-            this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(190, 67);
-            this.Start.TabIndex = 1;
-            this.Start.Text = "启动";
-            this.Start.UseVisualStyleBackColor = true;
-            this.Start.Click += new System.EventHandler(this.button1_Click);
+            this.StartButton.Font = new System.Drawing.Font("宋体", 15F);
+            this.StartButton.Location = new System.Drawing.Point(612, 374);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(190, 67);
+            this.StartButton.TabIndex = 1;
+            this.StartButton.Text = "启动";
+            this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
-            // Tickrate
+            // TickrateComboBox
             // 
-            this.Tickrate.Font = new System.Drawing.Font("宋体", 14F);
-            this.Tickrate.FormattingEnabled = true;
-            this.Tickrate.IntegralHeight = false;
-            this.Tickrate.Location = new System.Drawing.Point(12, 339);
-            this.Tickrate.Name = "Tickrate";
-            this.Tickrate.Size = new System.Drawing.Size(130, 27);
-            this.Tickrate.TabIndex = 2;
+            this.TickrateComboBox.DropDownHeight = 50;
+            this.TickrateComboBox.Font = new System.Drawing.Font("宋体", 14F);
+            this.TickrateComboBox.FormattingEnabled = true;
+            this.TickrateComboBox.IntegralHeight = false;
+            this.TickrateComboBox.Location = new System.Drawing.Point(33, 177);
+            this.TickrateComboBox.Name = "TickrateComboBox";
+            this.TickrateComboBox.Size = new System.Drawing.Size(130, 27);
+            this.TickrateComboBox.TabIndex = 2;
+            this.TickrateComboBox.Text = "128";
+            this.TickrateComboBox.Click += new System.EventHandler(this.TickrateComboBox_Click);
             // 
-            // Gamemode
+            // GamemodeComboBox
             // 
-            this.Gamemode.Font = new System.Drawing.Font("宋体", 14F);
-            this.Gamemode.FormattingEnabled = true;
-            this.Gamemode.IntegralHeight = false;
-            this.Gamemode.Location = new System.Drawing.Point(209, 339);
-            this.Gamemode.Name = "Gamemode";
-            this.Gamemode.Size = new System.Drawing.Size(130, 27);
-            this.Gamemode.TabIndex = 3;
+            this.GamemodeComboBox.DropDownHeight = 200;
+            this.GamemodeComboBox.Font = new System.Drawing.Font("宋体", 14F);
+            this.GamemodeComboBox.FormattingEnabled = true;
+            this.GamemodeComboBox.IntegralHeight = false;
+            this.GamemodeComboBox.Location = new System.Drawing.Point(208, 177);
+            this.GamemodeComboBox.Name = "GamemodeComboBox";
+            this.GamemodeComboBox.Size = new System.Drawing.Size(130, 27);
+            this.GamemodeComboBox.TabIndex = 3;
+            this.GamemodeComboBox.Text = "休闲模式";
+            this.GamemodeComboBox.Click += new System.EventHandler(this.GamemodeComboBox_Click);
             // 
-            // ConfigStatus
+            // CollectionLinkLabel
             // 
-            this.ConfigStatus.AutoSize = true;
-            this.ConfigStatus.Font = new System.Drawing.Font("宋体", 18F);
-            this.ConfigStatus.Location = new System.Drawing.Point(427, 9);
-            this.ConfigStatus.Name = "ConfigStatus";
-            this.ConfigStatus.Size = new System.Drawing.Size(154, 24);
-            this.ConfigStatus.TabIndex = 4;
-            this.ConfigStatus.Text = "Config状态：";
+            this.CollectionLinkLabel.AutoSize = true;
+            this.CollectionLinkLabel.Font = new System.Drawing.Font("宋体", 14F);
+            this.CollectionLinkLabel.Location = new System.Drawing.Point(23, 50);
+            this.CollectionLinkLabel.Name = "CollectionLinkLabel";
+            this.CollectionLinkLabel.Size = new System.Drawing.Size(104, 19);
+            this.CollectionLinkLabel.TabIndex = 6;
+            this.CollectionLinkLabel.Text = "合集链接：";
             // 
-            // Status
+            // DefaultMapLabel
             // 
-            this.Status.AutoSize = true;
-            this.Status.Font = new System.Drawing.Font("宋体", 18F);
-            this.Status.LinkColor = System.Drawing.Color.Black;
-            this.Status.Location = new System.Drawing.Point(568, 9);
-            this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(250, 24);
-            this.Status.TabIndex = 5;
-            this.Status.TabStop = true;
-            this.Status.Text = "error loading status";
+            this.DefaultMapLabel.AutoSize = true;
+            this.DefaultMapLabel.Font = new System.Drawing.Font("宋体", 14F);
+            this.DefaultMapLabel.Location = new System.Drawing.Point(23, 83);
+            this.DefaultMapLabel.Name = "DefaultMapLabel";
+            this.DefaultMapLabel.Size = new System.Drawing.Size(104, 19);
+            this.DefaultMapLabel.TabIndex = 7;
+            this.DefaultMapLabel.Text = "首选地图：";
             // 
-            // label1
+            // CollectionLinkTextbox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 14F);
-            this.label1.Location = new System.Drawing.Point(23, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 19);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "合集链接：";
+            this.CollectionLinkTextbox.Location = new System.Drawing.Point(129, 51);
+            this.CollectionLinkTextbox.Name = "CollectionLinkTextbox";
+            this.CollectionLinkTextbox.Size = new System.Drawing.Size(173, 21);
+            this.CollectionLinkTextbox.TabIndex = 8;
             // 
-            // label2
+            // DefaultMapTextbox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 14F);
-            this.label2.Location = new System.Drawing.Point(23, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 19);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "首选地图：";
+            this.DefaultMapTextbox.Location = new System.Drawing.Point(129, 86);
+            this.DefaultMapTextbox.Name = "DefaultMapTextbox";
+            this.DefaultMapTextbox.Size = new System.Drawing.Size(173, 21);
+            this.DefaultMapTextbox.TabIndex = 9;
             // 
-            // textBox1
+            // AddToFavoriteButton
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 21);
-            this.textBox1.TabIndex = 8;
+            this.AddToFavoriteButton.Font = new System.Drawing.Font("宋体", 15F);
+            this.AddToFavoriteButton.Location = new System.Drawing.Point(615, 20);
+            this.AddToFavoriteButton.Name = "AddToFavoriteButton";
+            this.AddToFavoriteButton.Size = new System.Drawing.Size(187, 62);
+            this.AddToFavoriteButton.TabIndex = 10;
+            this.AddToFavoriteButton.Text = "添加到收藏夹";
+            this.AddToFavoriteButton.UseVisualStyleBackColor = true;
+            this.AddToFavoriteButton.Click += new System.EventHandler(this.AddToFavoriteButton_Click);
             // 
-            // textBox2
+            // TickrateLabel
             // 
-            this.textBox2.Location = new System.Drawing.Point(129, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 21);
-            this.textBox2.TabIndex = 9;
+            this.TickrateLabel.AutoSize = true;
+            this.TickrateLabel.Font = new System.Drawing.Font("宋体", 15F);
+            this.TickrateLabel.Location = new System.Drawing.Point(29, 142);
+            this.TickrateLabel.Name = "TickrateLabel";
+            this.TickrateLabel.Size = new System.Drawing.Size(89, 20);
+            this.TickrateLabel.TabIndex = 11;
+            this.TickrateLabel.Text = "Tickrate";
             // 
-            // AddToFavorite
+            // GamemodeLabel
             // 
-            this.AddToFavorite.Font = new System.Drawing.Font("宋体", 15F);
-            this.AddToFavorite.Location = new System.Drawing.Point(614, 277);
-            this.AddToFavorite.Name = "AddToFavorite";
-            this.AddToFavorite.Size = new System.Drawing.Size(187, 62);
-            this.AddToFavorite.TabIndex = 10;
-            this.AddToFavorite.Text = "添加到收藏夹";
-            this.AddToFavorite.UseVisualStyleBackColor = true;
+            this.GamemodeLabel.AutoSize = true;
+            this.GamemodeLabel.Font = new System.Drawing.Font("宋体", 15F);
+            this.GamemodeLabel.Location = new System.Drawing.Point(204, 142);
+            this.GamemodeLabel.Name = "GamemodeLabel";
+            this.GamemodeLabel.Size = new System.Drawing.Size(89, 20);
+            this.GamemodeLabel.TabIndex = 12;
+            this.GamemodeLabel.Text = "游戏模式";
+            // 
+            // CollectionsLabel
+            // 
+            this.CollectionsLabel.AutoSize = true;
+            this.CollectionsLabel.Font = new System.Drawing.Font("宋体", 15F);
+            this.CollectionsLabel.Location = new System.Drawing.Point(381, 142);
+            this.CollectionsLabel.Name = "CollectionsLabel";
+            this.CollectionsLabel.Size = new System.Drawing.Size(89, 20);
+            this.CollectionsLabel.TabIndex = 13;
+            this.CollectionsLabel.Text = "地图合集";
+            // 
+            // PortComboBox
+            // 
+            this.PortComboBox.Font = new System.Drawing.Font("宋体", 14F);
+            this.PortComboBox.FormattingEnabled = true;
+            this.PortComboBox.IntegralHeight = false;
+            this.PortComboBox.Location = new System.Drawing.Point(632, 177);
+            this.PortComboBox.Name = "PortComboBox";
+            this.PortComboBox.Size = new System.Drawing.Size(130, 27);
+            this.PortComboBox.TabIndex = 14;
+            this.PortComboBox.Text = "27015";
+            // 
+            // PortLabel
+            // 
+            this.PortLabel.AutoSize = true;
+            this.PortLabel.Font = new System.Drawing.Font("宋体", 15F);
+            this.PortLabel.Location = new System.Drawing.Point(628, 142);
+            this.PortLabel.Name = "PortLabel";
+            this.PortLabel.Size = new System.Drawing.Size(49, 20);
+            this.PortLabel.TabIndex = 15;
+            this.PortLabel.Text = "端口";
+            // 
+            // CollectionNameTextBox
+            // 
+            this.CollectionNameTextBox.Location = new System.Drawing.Point(129, 20);
+            this.CollectionNameTextBox.Name = "CollectionNameTextBox";
+            this.CollectionNameTextBox.Size = new System.Drawing.Size(173, 21);
+            this.CollectionNameTextBox.TabIndex = 17;
+            // 
+            // CollectionName
+            // 
+            this.CollectionName.AutoSize = true;
+            this.CollectionName.Font = new System.Drawing.Font("宋体", 14F);
+            this.CollectionName.Location = new System.Drawing.Point(23, 20);
+            this.CollectionName.Name = "CollectionName";
+            this.CollectionName.Size = new System.Drawing.Size(104, 19);
+            this.CollectionName.TabIndex = 16;
+            this.CollectionName.Text = "合集名称：";
             // 
             // Launcher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 453);
-            this.Controls.Add(this.AddToFavorite);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Status);
-            this.Controls.Add(this.ConfigStatus);
-            this.Controls.Add(this.Gamemode);
-            this.Controls.Add(this.Tickrate);
-            this.Controls.Add(this.Start);
-            this.Controls.Add(this.Collections);
+            this.Controls.Add(this.CollectionNameTextBox);
+            this.Controls.Add(this.CollectionName);
+            this.Controls.Add(this.PortLabel);
+            this.Controls.Add(this.PortComboBox);
+            this.Controls.Add(this.CollectionsLabel);
+            this.Controls.Add(this.GamemodeLabel);
+            this.Controls.Add(this.TickrateLabel);
+            this.Controls.Add(this.AddToFavoriteButton);
+            this.Controls.Add(this.DefaultMapTextbox);
+            this.Controls.Add(this.CollectionLinkTextbox);
+            this.Controls.Add(this.DefaultMapLabel);
+            this.Controls.Add(this.CollectionLinkLabel);
+            this.Controls.Add(this.GamemodeComboBox);
+            this.Controls.Add(this.TickrateComboBox);
+            this.Controls.Add(this.StartButton);
+            this.Controls.Add(this.CollectionsComboBox);
             this.Name = "Launcher";
             this.Text = "CSGO服务器启动器";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -174,19 +239,26 @@ namespace CSGO_Server_Launcher
 
         }
 
+
+
         #endregion
 
-        private System.Windows.Forms.ComboBox Collections;
-        private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.ComboBox Tickrate;
-        private System.Windows.Forms.ComboBox Gamemode;
-        private System.Windows.Forms.Label ConfigStatus;
-        private System.Windows.Forms.LinkLabel Status;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button AddToFavorite;
+        public System.Windows.Forms.ComboBox CollectionsComboBox;
+        private System.Windows.Forms.Button StartButton;
+        public System.Windows.Forms.ComboBox TickrateComboBox;
+        private System.Windows.Forms.ComboBox GamemodeComboBox;
+        private System.Windows.Forms.Label CollectionLinkLabel;
+        private System.Windows.Forms.Label DefaultMapLabel;
+        private System.Windows.Forms.TextBox CollectionLinkTextbox;
+        private System.Windows.Forms.TextBox DefaultMapTextbox;
+        private System.Windows.Forms.Button AddToFavoriteButton;
+        private System.Windows.Forms.Label TickrateLabel;
+        private System.Windows.Forms.Label GamemodeLabel;
+        private System.Windows.Forms.Label CollectionsLabel;
+        private System.Windows.Forms.ComboBox PortComboBox;
+        private System.Windows.Forms.Label PortLabel;
+        private System.Windows.Forms.TextBox CollectionNameTextBox;
+        private System.Windows.Forms.Label CollectionName;
     }
 }
 

@@ -15,10 +15,11 @@ namespace CSGO_Server_Launcher
         [STAThread]
         static void Main()
         {
+            OnStart();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Launcher());
-            CheckConfig();
+
         }
     }
 }
